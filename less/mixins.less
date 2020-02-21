@@ -1,1 +1,20 @@
 // Mixins Here
+
+.ds(){
+    display: flex;  
+    justify-content: center;
+}
+
+
+
+
+//button
+.butt(@color, @background) {
+    color: @color;
+    background-color: @background;
+    &:hover {
+        color: @background;
+        background-color: @color;
+    }
+}
+
